@@ -1,0 +1,195 @@
+/* Reset some default styles */
+body, h1, h2, ul, li, button, input, table, th, td {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Calendar Container */
+.calendar {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    max-height: 600px;
+}
+
+/* Calendar Header */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Calendar Navigation Buttons */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Current Month Display */
+#current-month {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Calendar Table */
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Calendar Table Headers */
+.calendar-table th {
+    text-align: center;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Calendar Table Cells */
+.calendar-table td {
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Highlighted Today's Cell */
+.calendar-table td.today {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Event Form Container */
+.event-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Form Inputs */
+input[type="date"],
+input[type="text"],
+button#add-event,
+button#update-event,
+button#cancel-event {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Form Input Focus */
+input[type="date"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Add Event Button */
+button#add-event {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button#add-event:hover {
+    background-color: #0056b3;
+}
+
+/* Update Event Button */
+button#update-event {
+    background-color: #28a745;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button#update-event:hover {
+    background-color: #1e7e34;
+}
+
+/* Cancel Update Button */
+button#cancel-event {
+    background-color: #dc3545;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button#cancel-event:hover {
+    background-color: #bd2130;
+}
+
+/* Event List Container */
+.event-list {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+/* Event List Header */
+.event-list h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Event List Items */
+.event-list ul {
+    padding-left: 20px;
+    list-style-type: square;
+    color: #333;
+}
+
+/* Add more styles as needed */
